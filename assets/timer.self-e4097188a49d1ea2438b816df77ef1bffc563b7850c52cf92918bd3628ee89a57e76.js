@@ -29,7 +29,27 @@
 
   WORLD_TIMER_ITEM_REMOVE_CLASS = 'timer-item-remove';
 
-  WORLD_LIST = [[301, false], [302, true], [303, true], [304, true], [305, true], [306, true], [308, false], [309, true], [310, true], [311, true], [312, true], [313, true], [314, true], [316, false], [317, true], [318, true], [319, true], [320, true], [321, true], [322, true], [325, true], [326, false], [327, true], [328, true], [329, true], [330, true], [333, true], [334, true], [335, false], [336, true], [337, true], [338, true], [341, true], [342, true], [343, true], [344, true], [345, true], [346, true], [349, true], [350, true], [351, true], [352, true], [353, true], [354, true], [357, true], [358, true], [359, true], [360, true], [361, true], [362, true], [365, true], [366, true], [367, true], [368, true], [369, true], [370, true], [373, true], [374, true], [375, true], [376, true], [377, true], [378, true], [381, false], [382, false], [383, false], [384, false], [385, false], [386, true], [393, false], [394, false]];
+  WORLD_LIST = [[1, false], [8, false], [16, false], [26, false], [35, false], [81, false], [82, false], [83, false], [84, false], [85, false], [93, false], [94, false], [2, true], [3, true], [4, true], [5, true], [6, true], [7, true], [9, true], [10, true], [11, true], [12, true], [13, true], [14, true], [15, true], [17, true], [18, true], [19, true], [20, true], [21, true], [22, true], [23, true], [24, true], [27, true], [28, true], [29, true], [30, true], [31, true], [32, true], [33, true], [34, true], [36, true], [38, true], [39, true], [40, true], [41, true], [42, true], [43, true], [44, true], [46, true], [47, true], [48, true], [49, true], [50, true], [51, true], [52, true], [53, true], [54, true], [55, true], [56, true], [57, true], [58, true], [59, true], [60, true], [61, true], [62, true], [65, true], [66, true], [67, true], [68, true], [69, true], [70, true], [73, true], [74, true], [75, true], [76, true], [77, true], [78, true], [86, true], [87, true], [88, true], [89, true], [90, true], [91, true]];
+
+
+  /*
+  WORLD_LIST = [
+      [301, false], [302, true], [303, true], [304, true], [305, true],
+      [306, true], [308, false], [309, true], [310, true], [311, true],
+      [312, true], [313, true], [314, true], [316, false], [317, true],
+      [318, true], [319, true], [320, true], [321, true], [322, true],
+      [325, true], [326, false], [327, true], [328, true], [329, true],
+      [330, true], [333, true], [334, true], [335, false], [336, true],
+      [337, true], [338, true], [341, true], [342, true], [343, true],
+      [344, true], [345, true], [346, true], [349, true], [350, true],
+      [351, true], [352, true], [353, true], [354, true], [357, true],
+      [358, true], [359, true], [360, true], [361, true], [362, true],
+      [365, true], [366, true], [367, true], [368, true], [369, true],
+      [370, true], [373, true], [374, true], [375, true], [376, true],
+      [377, true], [378, true], [381, false], [382, false], [383, false],
+      [384, false], [385, false], [386, true], [393, false], [394, false]
+  ]
+   */
 
   MEMBERS_GLYPHICON_CLASS = "glyphicon glyphicon-star";
 
@@ -77,6 +97,9 @@
 
   distribute_world_list = function(world_list, num_columns) {
     var columns_list, i, j, max_column_length, world, _i, _j;
+    world_list = world_list.sort(function(a, b) {
+      return a[0] - b[0];
+    });
     max_column_length = Math.floor(world_list.length / num_columns);
     if (world_list.length % num_columns !== 0) {
       ++max_column_length;
@@ -301,7 +324,7 @@
     $(document).on('click', "." + WORLD_TIMER_ITEM_REFRESH_CLASS, refresh_timer_click_event);
     $(document).on('keyup paste', "#" + WORLD_NUMBER_INPUT_ID, world_input_change_event);
 
-    /* (Disabled For Static Webpages)
+    /*
     $.ajax({
         url: '/worlds',
         type: 'GET',

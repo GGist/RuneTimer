@@ -3,32 +3,32 @@
   src: url("LilyScriptOne-Regular.ttf");
 }
 /* Site Element Styles */
-/* line 11, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 11, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .rune-navbar {
   background-color: #044E7A !important;
 }
 
-/* line 15, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 15, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .rune-navbar-header {
   color: #3798D2 !important;
 }
 
-/* line 19, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 19, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .rune-navbar-header:hover {
   color: #91C7E7 !important;
 }
 
-/* line 23, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 23, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .rune-navbar-element {
   color: #3798D2 !important;
 }
 
-/* line 27, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 27, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .rune-navbar-element:hover {
   color: #91C7E7 !important;
 }
 
-/* line 31, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 31, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .rune-document {
   background-color: #0680C9 !important;
   position: fixed !important;
@@ -38,56 +38,56 @@
 
 /* End Site Element Styles */
 /* World List Styles */
-/* line 40, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 40, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list > li {
   cursor: pointer;
 }
 
-/* line 44, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 44, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list-item-member {
   background-color: #044E7A !important;
 }
 
-/* line 48, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 48, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list-item-member:hover {
   background-color: #3798D2 !important;
 }
 
-/* line 52, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 52, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list-item-nonmember {
   background-color: #3798D2 !important;
 }
 
-/* line 56, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 56, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list-item-nonmember:hover {
   background-color: #91C7E7 !important;
 }
 
 /* End World List Styles */
 /* World List Rocks Tracked */
-/* line 62, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 62, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list-item-one-rock {
   background-color: #999999 !important;
 }
 
-/* line 66, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 66, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list-item-one-rock:hover {
   background-color: #C5C5C5 !important;
 }
 
-/* line 70, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 70, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list-item-two-rocks {
   background-color: #000000 !important;
 }
 
-/* line 74, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 74, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .world-list-item-two-rocks:hover {
   background-color: #525252 !important;
 }
 
 /* End World List Rocks Tracked */
 /* World List Overlay */
-/* line 81, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 81, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .overlay {
   top: 0;
   left: 0;
@@ -103,7 +103,7 @@
 
 /* End World List Overlay */
 /* World List Spinner */
-/* line 99, C:/Users/GG/GitHub/RuneTimer/app/assets/stylesheets/timer.scss */
+/* line 99, /root/RuneTimer/app/assets/stylesheets/timer.scss */
 .loader {
   font-size: 90px;
   text-indent: -9999em;
